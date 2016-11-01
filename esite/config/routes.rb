@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'page/home'
+  resources :products
+root "page#home"
+
 
   get 'page/about'
 

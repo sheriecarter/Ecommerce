@@ -10,22 +10,30 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require bootstrap-3.2.2.min
  *= require_tree .
  *= require_self
  */
  *{
+
    margin: 0;
    padding: 0;
  }
+body {
+  margin: 0px;
 
- #nav{
+}
+ .navbar{
    width:100%;
    height: 40px;
    background: black;
    color: white;
-   margin: 0;
+   margin: 0px !important;
    padding: 0;
    float: left;
+   margin-top: 0%;
+   margin-bottom: 0px;
+   display: block;
  }
 #page_nav a, #sign_in a{
   line-height: 40px;
@@ -44,8 +52,160 @@
    margin: 0 5% 0 0;
  }
 
- #main_wrap {
-   width: 90%;
-   float: left;
-   margin: 20px 5% 0 5%;
+ .main_wrap {
+   margin-top: 45px;
+   margin-left: 0px !important;
+   margin-right: 0px !important;
+   /*margin: 30px 5% 0 5%;*/
+
+
  }
+ .footer {
+  color: black !important;
+  height: 100px;
+  text-align: center;
+  padding-top: 20px;
+
+}
+.footer a{
+  color: black;
+  text-align: center;
+  margin: 20px;
+}
+.IG {
+  height: 300px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.emails {
+  text-align: center;
+  background-color: pink;
+  color: black;
+  height: 70px;
+  padding: 10px;
+
+}
+.form-inline {
+  display: inline-block;
+}
+
+.emailSign{
+  float: left;
+  padding-right: 20px;
+  align-self: center;
+  vertical-align: middle;
+  padding-top: 10px;
+}
+
+.joinemail{
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+  border-color: black;
+
+}
+
+
+
+@keyframes slider {
+
+0%{
+  left: 0;
+}
+
+20%{
+  left: 0;
+}
+
+25%{
+  left: -100%;
+}
+45%{
+  left: -100%;
+}
+
+
+50%{
+  left: -200%;
+}
+70%{
+  left: -200%;
+}
+
+75% {
+  left: -300%;
+}
+
+95%{
+  left: -400%;
+}
+100%{
+  left: -400%;
+}
+}
+  #slider {
+    overflow: hidden;
+    margin-top: 0px !important;
+    padding-left: 0px  !important;
+    padding-right: 0px  !important;
+
+   }
+
+#slider figure img{
+  width: 20%;
+  float: left;
+  height: 300px;
+  margin-top: 0px;
+}
+
+
+#slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slider infinite;
+}
+.slidercaption{
+  position: relative;
+  top: 120px;
+  left: 50%;
+  text-align: center;
+  color:white;
+}
+figcaption {
+  display: block;
+  margin-left: 30%;
+  margin-top: 100px;
+  font-size: 70px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+}
+.hashtagflash{
+  height: 100px;
+  background-color: pink;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  padding-top: 30px;
+  animation: 3s flashmessage infinite;
+}
+@keyframes flashmessage {
+  0%{color: black;}
+  24%{color:black;}
+  50%{color: black;}
+  51%{color: white;}
+  75%{color: white;}
+  100%{color: white;}
+}
+
+.hashtagflash:hover {
+  color:white;
+}

@@ -9,9 +9,11 @@
   </head>
 
   <body>
-  <nav id="nav">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
     <div id ="page_nav">
         <%= link_to "Home", root_path %>
+        <%= link_to "Shop",  products_path %>
         <%= link_to "About", page_about_path %>
         <%= link_to "FAQS", page_faqs_path %>
         <%= link_to "Contact", page_contact_path %>
@@ -26,16 +28,70 @@
     <%= link_to "Sign Up", new_user_registration_path %>
     <% end %>
         </div>
+      </div>
   </nav>
+<div class="hashtagflash">
+  <div class="flashmessage">
+<h1>#MyBoutique</h1>
+</div>
+</div>
+  <div id="slider">
+    <figure>
+    <img src="http://images.contentful.com/xrqt4fyyv2yx/2mEh3eu0lW2C0s2oCiSsgK/3059b428a953d9b03885d04f7d3e37d4/v-day_06.jpg?fl=progressive&w=1100&q=40">
 
-<div id="main wrap">
+    <img src="http://images.contentful.com/xrqt4fyyv2yx/2mEh3eu0lW2C0s2oCiSsgK/3059b428a953d9b03885d04f7d3e37d4/v-day_06.jpg?fl=progressive&w=1100&q=40" alt="Space">
+    <img src="http://images.contentful.com/xrqt4fyyv2yx/2mEh3eu0lW2C0s2oCiSsgK/3059b428a953d9b03885d04f7d3e37d4/v-day_06.jpg?fl=progressive&w=1100&q=40" alt="Space">
+    <img src="http://images.contentful.com/xrqt4fyyv2yx/2mEh3eu0lW2C0s2oCiSsgK/3059b428a953d9b03885d04f7d3e37d4/v-day_06.jpg?fl=progressive&w=1100&q=40" alt="Space">
+    <img src="http://images.contentful.com/xrqt4fyyv2yx/2mEh3eu0lW2C0s2oCiSsgK/3059b428a953d9b03885d04f7d3e37d4/v-day_06.jpg?fl=progressive&w=1100&q=40" alt="Space">
+  <!-- <h1 class="slidercaption">Shop Now </h1> -->
+
+  </figure>
+  <figcaption> Shop Now </figcaption>
+  </div>
+
+<div class="main_wrap container-fluid">
 
 
 
-    <p class="notice"><%= notice %></p>
-     <p class="alert"><%= alert %></p>
+
     <%= yield %>
 
 </div>
+
+<p class="notice"><%= notice %></p>
+ <p class="alert"><%= alert %></p>
   </body>
+  <div class="container-fluid IG">
+    <div> Follow Us On Instagram </div>
+
+      <%= image_tag("jade.png")%>
+        <%= image_tag("jade.png")%>
+          <%= image_tag("jade.png")%>
+            <%= image_tag("jade.png")%>
+
+  </div>
+  <div class="emails">
+
+    <!-- <%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Sign Up for Email Updates") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Join") %>
+<% end %> -->
+<form class="form-inline">
+  <div class="form-group">
+      <label class="emailSign" for="exampleInputEmail2">Sign Up For Email Updates</label>
+      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter Your Email Address">
+  <button type="submit" class="btn btn-primary joinemail">Join</button>
+    </div>
+
+  </form>
+  </div>
+  <div class="container footer">
+
+      <a href="#">Contact Us</a>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Return Policy</a>
+
+  </div>
 </html>

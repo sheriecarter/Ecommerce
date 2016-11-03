@@ -3,9 +3,32 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<!-- <h1 class="productsTitle">Products</h1> -->
+<nav class="product-filter">
 
-<table>
+  <h1>Clothing</h1>
+
+  <div class="sort">
+
+    <div class="collection-sort">
+      <label>Filter by:</label>
+      <select>
+        <option value="/">All Jackets</option>
+      </select>
+    </div>
+
+    <div class="collection-sort">
+      <label>Sort by:</label>
+      <select>
+        <option value="/">Featured</option>
+      </select>
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- <table>
   <thead>
     <tr>
       <th>Title</th>
@@ -22,7 +45,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.title %></td>
-        <td><%= product.image_url %></td>
+        <td><%= image_tag(product.image_url) %></td>
         <td><%= product.price %></td>
         <td><%= product.category %></td>
         <td><%= product.subcategory %></td>
@@ -34,8 +57,29 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
+
+
+
+
+    <section class="products">
+<% @products.each do |product| %>
+      <div class="product-card">
+        <div class="product-image">
+        <img> <%= image_tag("silk.png") %></img>
+        </div>
+        <div class="product-info">
+          <h5> <%= product.title %></h5>
+          <h6><%= product.price %></h6>
+        </div>
+      </div>
+  <% end %>
+    </section>
+
+
 
 <br>
+
+      <!-- more products -->
 
 <%= link_to 'New Product', new_product_path %>

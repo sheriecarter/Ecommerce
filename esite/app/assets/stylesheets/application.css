@@ -73,16 +73,26 @@ body {
   margin: 20px;
 }
 .IG {
-  height: 300px;
+  height: 500px;
   background-color: black;
   color: white;
   text-align: center;
   padding: 20px;
+
+}
+/*.instagram-media{
+
+  max-height: 100px;
+  max-width: 100px;
+  object-fit: contain;
+}*/
+.clearfix {
+  overflow: auto;
 }
 
 .emails {
   text-align: center;
-  background-color: pink;
+  background-color: #772c39;
   color: black;
   height: 70px;
   padding: 10px;
@@ -190,7 +200,7 @@ figcaption {
 }
 .hashtagflash{
   height: 100px;
-  background-color: pink;
+  background-color: #772c39;
   color: black;
   text-align: center;
   padding: 20px;
@@ -198,14 +208,26 @@ figcaption {
   animation: 3s flashmessage infinite;
 }
 @keyframes flashmessage {
-  0%{color: black;}
-  24%{color:black;}
-  50%{color: black;}
-  51%{color: white;}
-  75%{color: white;}
-  100%{color: white;}
+  0%{
+    /*color: black;*/
+    background-color: #772c39;}
+  /*24%{color:black;}*/
+  50%{
+    /*color: black;*/
+      background-color: #67464c;}
+  51%{
+    /*color: white;}*/
+  /*75%{color: white;}*/
+  100%{
+    /*color: white;*/
+  background-color: #a55462;}
 }
 
 .hashtagflash:hover {
   color:white;
+}
+.productsTitle{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }

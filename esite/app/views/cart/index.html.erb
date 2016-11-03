@@ -1,6 +1,11 @@
 <h1>Shopping Cart</h1>
-<br>
+
+<% if @cart.empty? %>
+  <p> Your Cart is Currently Empty</p>
+  <% else%>
+
 <%= link_to 'Empty Your Cart', cart_clear_path %>
+<% end %>
 <br><br><br>
 <% total = 0 %>
 <ul>
@@ -16,4 +21,5 @@
 <% total += quantity * product.price %>
 <% end %>
 <p><b><%= number_to_currency(total, :unit => '$') %>
+  <%= link_to "Checkout", new_charge_path %>
 </ul>

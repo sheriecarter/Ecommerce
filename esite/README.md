@@ -38,4 +38,16 @@ My user is individuals who like to wear women's clothing aged between 16-27.
 Link to your wireframes – sketches of major views / interfaces in your application.
 Link to your entity relationship diagrams – plan out your data relationships before coding.
 Descriptions of any unsolved problems or future features.
+
+
+#Stripe
+To see Checkout in action, click the button below, filling in the resulting form with:
+Any random, syntactically valid email address (the more random, the better)
+One of Stripe's test card numbers, such as 4242424242424242
+Any three digit CVC code
+Any expiration date in the future
+Any billing postal code, such as 12345
+
+Pay with Card
+
 #Future Features

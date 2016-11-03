@@ -8,6 +8,7 @@ class CreateProducts < ActiveRecord::Migration[5.0]
       t.string :category
       t.string :subcategory
       t.string :size
+      t.belongs_to :shopping
 
       t.timestamps
     end

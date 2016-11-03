@@ -12,7 +12,7 @@
   <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
     <div id ="page_nav">
-        <%= link_to "Home", root_path %>
+        <%= link_to "Arzelia", root_path,:class => 'brandName', :style => 'font-family: cursive; font-size: 30px; text-align:left; padding-top: 20px;'  %>
         <%= link_to "Shop",  products_path %>
         <%= link_to "About", page_about_path %>
         <%= link_to "FAQS", page_faqs_path %>
@@ -21,6 +21,7 @@
 
 
 <div id="sign_in">
+  <%= link_to "Shopping Cart", cart_path %>
   <% if user_signed_in? %>
     <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
     <% else %>
@@ -32,7 +33,7 @@
   </nav>
 <div class="hashtagflash">
   <div class="flashmessage">
-<h1>#MyBoutique</h1>
+<h1> Tag us on Instagram #Arzelia</h1>
 </div>
 </div>
   <div id="slider">
@@ -47,7 +48,7 @@
   <!-- <h1 class="slidercaption">Shop Now </h1> -->
 
   </figure>
-  <figcaption> Shop Now </figcaption>
+  <figcaption><%= link_to "Shop Now",  products_path, :style => 'color: white; text-decoration: none; background-color: transparent;' %></figcaption>
   </div>
 
 <div class="main_wrap container-fluid">
@@ -71,11 +72,7 @@
   </div>
   <div class="emails">
 
-    <!-- <%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Sign Up for Email Updates") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Join") %>
-<% end %> -->
+
 <form class="form-inline">
   <div class="form-group">
       <label class="emailSign" for="exampleInputEmail2">Sign Up For Email Updates</label>
@@ -87,8 +84,8 @@
   </div>
   <div class="container footer">
 
-      <a href="#">Contact Us</a>
-      <a href="#">About</a>
+      <a href="/page/contact">Contact Us</a>
+      <a href="/page/about">About</a>
       <a href="#">Careers</a>
       <a href="#">Return Policy</a>
 

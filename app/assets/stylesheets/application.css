@@ -79,6 +79,7 @@ body {
   color: white;
   text-align: center;
   padding: 20px;
+  padding-left: 40%;
 
 }
 /*.instagram-media{
@@ -168,7 +169,7 @@ body {
 #slider figure img{
   width: 20%;
   float: left;
-  height: 300px;
+  height: 500px;
   margin-top: 0px;
 }
 
@@ -184,15 +185,15 @@ body {
 }
 .slidercaption{
   position: relative;
-  top: 120px;
+  top: 270px;
   left: 50%;
   text-align: center;
   color:white;
 }
 figcaption {
   display: block;
-  margin-left: 30%;
-  margin-top: 100px;
+  margin-left: 35%;
+  margin-top: 250px;
   font-size: 70px;
   text-align: center;
   justify-content: center;
@@ -235,4 +236,13 @@ figcaption {
 
 .brandName a{
   font-family: cursive !important;
+}
+.igembed2{
+  float: left;
+
+}
+.igembed1{
+
+  margin-left: : 1000px;
+
 }

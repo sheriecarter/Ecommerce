@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
 
   resources :products
-root "page#home"
+root "products#index"
 
 
   get 'page/about'

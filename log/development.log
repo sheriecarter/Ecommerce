@@ -11184,3 +11184,18 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 181ms (Views: 139.7ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/cart" for ::1 at 2017-05-02 20:45:45 -0700
+Processing by CartController#index as HTML
+  Rendering cart/index.html.erb within layouts/application
+  Rendered cart/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 337ms (Views: 306.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 20:48:19 -0700
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (174.6ms)
+Completed 200 OK in 885ms (Views: 804.1ms | ActiveRecord: 0.5ms)
+
+
